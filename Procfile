@@ -1,1 +1,1 @@
-web: gunicorn whitebearbake.run --log-file -
+web: gunicorn whitebearbake_heroku.run --log-file -
