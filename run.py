@@ -1,9 +1,10 @@
 from whitebearbake_heroku import create_app
-
+import 
+port = int(os.environ.get('PORT', 5000))
 app = create_app()
 
-def run(app=app):
-    app.run(host='0.0.0.0', port=5002)
+def run(app=app,port=port):
+    app.run(host='0.0.0.0', port=port)
 
 # Run entrypoint
 if __name__ == '__main__':
